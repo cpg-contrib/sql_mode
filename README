@@ -1,0 +1,34 @@
+/**************************************************
+  SQL_Mode Plugin for Coppermine Photo Gallery
+  *************************************************
+  SQL_Mode version 1.0
+  Copyright (c) 2005-2006 Donovan Bray <donnoman@donovanbray.com>
+  *************************************************
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+  *************************************************
+  Coppermine version: 1.4.9
+  $Source: /cvsroot/cpg-contrib/sql_mode/README,v $
+  $Revision: 1.1 $
+  $Author: donnoman $
+  $Date: 2006/11/01 05:43:31 $
+***************************************************/
+
+SQL_MODE is a Coppermine Plugin Developer tool to enumerate and set different MySQL query modes.
+
+This tool AUTOMATICALLY enables Coppermine's DEBUG OUTPUT on plugin installation to be able to 
+display complete SQL error modes, as enabling certain modes or combination of modes may render 
+your Coppermine installation unusable.
+
+This is primarily a developer tool to FORCE picky SQL configurations, however it can
+be used by end users to band-aid plugins that haven't been written to accomodate MySQL 5's 
+"strict" modes.
+
+If you are having issues with a plugin or Coppermine itself, disable all SQL MODES so that 
+the Session Mode SQL is NULL. Verify that your gallery works properly, then disable the 
+debug modes.  
+
+Report the error that you were receiving to the plugin author, perhaps point them 
+to this tool to help them to test their plugin.
